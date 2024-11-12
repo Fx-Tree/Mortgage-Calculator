@@ -28,7 +28,7 @@ body {
 }
 
 .clear-all {
-  color: hsl(0, 0%, 73%);
+  color: hsl(200, 24%, 40%);
 }
 
 .clear-all:hover {
@@ -54,6 +54,10 @@ body {
 .form-check:active {
   background-color: hsl(60, 100%, 98%);
   border-color: hsl(61, 70%, 52%);
+}
+
+.form-check-label {
+  color: hsl(202, 55%, 16%);
 }
 
 .my-btn {
