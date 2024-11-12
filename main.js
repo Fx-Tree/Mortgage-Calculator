@@ -11,7 +11,7 @@ const repaymentRadio = document.getElementById("repayments");
 const interestRadio = document.getElementById("interest-only");
 const monthlyRepaymentParagraph = document.querySelector(".monthly-repay-p");
 const interestParagraph = document.querySelector(".interest-p");
-const clearAll = document.querySelector(".clear-all");
+const clearAll = document.querySelectorAll(".clear-all");
 
 //to calculate repayment
 repaymentButton.addEventListener("click", function () {
@@ -61,11 +61,13 @@ interestRadio.addEventListener("click", function () {
   });
 });
 
-clearAll.addEventListener("click", function () {
-  mortgageAmount.value = NaN;
-  mortgageTerm.value = NaN;
-  interestRate.value = NaN;
+for (let i = 0; i < clearAll.length; i++) {
+  clearAll[i].addEventListener("click", function () {
+    mortgageAmount.value = NaN;
+    mortgageTerm.value = NaN;
+    interestRate.value = NaN;
 
-  totalRepayment.textContent = 0;
-  monthlyRepayment.textContent = 0;
-});
+    totalRepayment.textContent = 0;
+    monthlyRepayment.textContent = 0;
+  });
+}
