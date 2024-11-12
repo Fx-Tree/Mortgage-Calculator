@@ -1,0 +1,108 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input :focus {
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: hsl(202, 86%, 94%);
+  width: 100%;
+  height: 100vh;
+}
+
+.mort-cal {
+  width: clamp(315px, 80%, 1440px);
+}
+
+.mort-cal-right {
+  background-color: hsl(202, 55%, 16%);
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  border-bottom-left-radius: 90px;
+  border-top-left-radius: 0;
+}
+
+.clear-all {
+  color: hsl(0, 0%, 73%);
+}
+
+.clear-all:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.input-group-text {
+  background-color: hsl(202, 86%, 94%);
+}
+
+.form-check {
+  border: solid 1px grey;
+  border-radius: 10px;
+}
+
+.form-check-input:checked {
+  background-color: hsl(61, 70%, 52%);
+
+  border-color: hsl(61, 75%, 78%);
+}
+
+.form-check:active {
+  background-color: hsl(60, 100%, 98%);
+  border-color: hsl(61, 70%, 52%);
+}
+
+.my-btn {
+  width: 50%;
+  border-radius: 50px;
+}
+
+.btn-primary {
+  --bs-btn-color: hsl(202, 55%, 16%);
+  --bs-btn-bg: hsl(61, 70%, 52%);
+  --bs-btn-border-color: hsl(61, 70%, 52%);
+  --bs-btn-hover-color: hsl(202, 55%, 16%);
+  --bs-btn-hover-bg: hsl(60, 100%, 98%);
+  --bs-btn-hover-border-color: hsl(61, 70%, 52%);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: hsl(202, 55%, 16%);
+  --bs-btn-active-bg: hsl(60, 100%, 98%);
+  --bs-btn-active-border-color: hsl(61, 70%, 52%);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: hsl(202, 55%, 16%);
+  --bs-btn-disabled-bg: hsl(61, 70%, 52%);
+  --bs-btn-disabled-border-color: hsl(61, 70%, 52%);
+}
+
+.hide {
+  display: none;
+}
+
+.result-window {
+  width: 100%;
+  height: 280px;
+  background-color: hsl(200, 53%, 13%);
+  border-radius: 20px;
+  border-top: solid 4px hsl(61, 70%, 52%);
+}
+
+.amount {
+  color: hsl(61, 70%, 52%);
+  font-size: 4rem;
+  font-weight: 700px;
+}
+
+hr {
+  color: white;
+}
+
+@media screen and (max-width: 994px) {
+  .mort-cal-right {
+    border-bottom-left-radius: 20px;
+  }
+}
